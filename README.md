@@ -20,23 +20,24 @@
 ```bash
 pkg update
 pkg install git curl -y
-git clone https://github.com/sepantartd/vitori-termux-client.git
-cd vitori-termux-client
+git clone https://github.com/sepantartd/v2ray-termux.git
+cd v2ray-termux
 bash install.sh
 ```
 
 ## ▶️ اجرا
-cd vitori-termux-client
-
+```
+cd v2ray-termux
+```
 سپس:
 
-
+```
 bash start.sh
-
+```
 
 پس از اجرا، یک پروکسی **SOCKS5** روی آدرس **127.0.0.1:1080** ایجاد می‌شود.
 
----
+
 
 # 📱 تنظیم پروکسی در تلگرام
 
@@ -54,7 +55,7 @@ Port: 1080
 
 6. تنظیمات را ذخیره کرده و پروکسی را فعال کنید.
 
----
+
 
 # 📱 استفاده از پروکسی در v2rayNG
 
@@ -81,7 +82,7 @@ bash start.sh
 
 در غیر این صورت، v2rayNG نمی‌تواند به آدرس **127.0.0.1:1080** متصل شود.
 
----
+
 
 ## ⚠️ نکات مهم
 
@@ -111,7 +112,7 @@ Port: 1080
 راه‌حل: دوباره دستور زیر را اجرا کنید و مطمئن شوید Termux بسته نشود:
 bash start.sh
 
----
+
 
 ### 2) چرا v2rayNG به 127.0.0.1:1080 وصل نمی‌شود؟
 دو دلیل رایج:
@@ -120,7 +121,7 @@ bash start.sh
 حتماً قبل از اتصال، داخل Termux دستور زیر را اجرا کنید:
 bash start.sh
 
----
+
 
 ### 3) آیا می‌توانم از این پروکسی در برنامه‌های دیگر استفاده کنم؟
 بله، هر برنامه‌ای که از SOCKS5 پشتیبانی کند قابل استفاده است.  
@@ -129,20 +130,19 @@ Type: SOCKS5
 Server: 127.0.0.1
 Port: 1080
 
----
 
 ### 4) آیا با بسته شدن Termux اتصال قطع می‌شود؟
 بله. Termux باید باز بماند تا Xray فعال باشد. اگر Termux بسته شود، پروکسی نیز قطع می‌شود.
 
----
+
 
 ### 5) چطور Xray را آپدیت کنم؟
 پوشه xray/ را حذف کرده و نسخه جدید را جایگزین کنید.  
 یا کل پروژه را دوباره کلون کنید:
-rm -rf vitori-termux-client
-git clone https://github.com/sepantartd/vitori-termux-client.git
+rm -rf v2ray-termux
+git clone https://github.com/sepantartd/v2ray-termux.git
 
----
+
 
 ### 6) چطور کانفیگ VLESS Reality جدید وارد کنم؟
 فایل کانفیگ داخل مسیر زیر قرار دارد:
@@ -150,14 +150,14 @@ xray/config.json
 آن را با کانفیگ جدید جایگزین کنید و سپس اجرا کنید:
 bash start.sh
 
----
+
 
 ### 7) آیا می‌توانم پورت پروکسی را تغییر دهم؟
 بله. پورت داخل فایل کانفیگ Xray قابل تغییر است:
 xray/config.json
 مقدار port را تغییر دهید و سپس اسکریپت را دوباره اجرا کنید.
 
----
+
 
 ### 8) چرا سرعت اتصال کم است؟
 دلایل رایج:
@@ -169,12 +169,12 @@ xray/config.json
 - استفاده از DNSهای معتبر مثل Cloudflare  
 - بررسی دوباره کانفیگ Reality  
 
----
+
 
 ### 9) آیا این کلاینت روی گوشی‌های قدیمی کار می‌کند؟
 بله، چون بسیار سبک است و روی اکثر دستگاه‌های اندرویدی با Termux اجرا می‌شود.
 
----
+
 
 ### 10) چطور کلاینت را متوقف کنم؟
 کافی است Termux را ببندید یا اسکریپت را متوقف کنید:
