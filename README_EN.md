@@ -1,5 +1,11 @@
 # v2ray-termux
+<div align="center">
 
+[🇬🇧 English](README.md) &nbsp;&nbsp;•&nbsp;&nbsp; [🇮🇷 فارسی](README_FA.md)
+
+</div>
+
+---
 A lightweight and simple **Xray/V2Ray client for Termux on Android**, designed to run an Xray-based proxy directly from your phone and provide a local SOCKS5 endpoint for other applications.
 
 The project is focused on keeping the setup simple while making it possible to use Xray networking capabilities directly from a Termux environment.
