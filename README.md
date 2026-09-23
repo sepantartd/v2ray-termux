@@ -1,4 +1,11 @@
 # کلاینت سبک و سریع برای اندروید
+<div align="center">
+
+[🇬🇧 English](README.md) &nbsp;&nbsp;•&nbsp;&nbsp; [🇮🇷 فارسی](README_FA.md)
+
+</div>
+
+---
 
 کلاینتی سبک و سریع برای **Termux** که امکان اتصال به سرورهای **Xray** را فراهم می‌کند.
 
