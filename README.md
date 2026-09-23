@@ -1,7 +1,7 @@
 # کلاینت سبک و سریع برای اندروید
 <div align="center">
 
-[🇬🇧 English](README.md) &nbsp;&nbsp;•&nbsp;&nbsp; [🇮🇷 فارسی](README_FA.md)
+[🇬🇧 English](README_EN.md) &nbsp;&nbsp;•&nbsp;&nbsp; [🇮🇷 فارسی](README.md)
 
 </div>
 
